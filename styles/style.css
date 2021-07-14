@@ -1,0 +1,176 @@
+/*--------- Fonts ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/*--------------------------
+  Common Styles or Utilities 
+---------------------------*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+}
+h1{
+    font-size: 64px;
+    line-height: 80px;
+}
+h2{
+    font-weight: 700;
+    font-size: 45px;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+}
+hr{
+    border-color: gray;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*=========================
+         Body Section 
+========================== */
+
+
+.container{
+    width: 1263px;
+    background-color: rgba(27, 0, 126, 0.973);
+}
+.top-section{
+    display: flex;
+
+}
+.title{
+    margin:152px 84px;
+    color: white;
+}
+/*============================
+    Top section, Hover, Button  
+==============================*/
+@keyframes img-pulse {
+    50% {
+      transform:scale(0.9);
+    }
+    100% {
+      transform:scale(1.0);
+    }
+  }
+.top-banner:hover {
+    animation-name: img-pulse;
+      animation-duration: 0.9s;
+      animation-timing-function: ease-out;
+      animation-iteration-count:infinite;
+      animation-direction:reverse;    
+}
+.top-banner img{
+    width: 556px;
+    margin: 114px 19px;
+}
+
+.live-button{
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+/*========================
+  Players index
+==========================*/
+
+.container-2{
+    width: 1050px;
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px;
+}
+.player{
+    padding: 5px;
+    margin: 25px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 20px 23px 20px rgb(194, 194, 194);
+    border-radius: 5px;
+    text-overflow: hidden;
+
+}
+.player-title{
+    font-weight: bold;
+    font-size: 28px;
+}
+.player-banner img{
+   
+    width: 300px;
+    height: auto;
+}
+
+
+/*==============
+ highlights
+=============== */
+.flexible-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 1263px;
+
+    
+}
+.highlight-info{
+    width: 50%;
+    padding: 10px 174px 66px;
+}
+.highlight-banner img{
+    width: 80%;
+    padding-top: 20px;
+}
+
+/* Footer 
+--------- */
+.footer-logo{
+    text-align: center;
+}
+.footer-logo img{
+    height: 110px;
+    padding-top: 40px;
+}
+
+/* fontawesome icon css */
+
+ul {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding-left: 0px;
+}
+ul li{
+    display: flex;
+    padding: 5px;
+}
+ul li a{
+    text-decoration: none;
+    color: #969BAB;
+    font-size: 32px;
+}
+ul li a:hover{
+    color: #2D25A0;
+}
+
+/* copyright css */
+
+.copyright p{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 18px;
+    margin-top: -5px;
+}
