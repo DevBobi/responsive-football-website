@@ -123,16 +123,24 @@ hr{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 1263px;
-
-    
 }
 .highlight-info{
     width: 50%;
-    padding: 10px 174px 66px;
+    padding: 10px 150px;
 }
 .highlight-banner img{
     width: 80%;
     padding-top: 20px;
+    margin-left: 50px;
+}
+.highlight-info{
+    width: 50%;
+    padding-top: 50px;
+}
+.highlight-banner2 img{
+    width: 85%;
+    padding-left: 70px;
+    padding-top: 50px;
 }
 
 /* Footer 
@@ -142,7 +150,7 @@ hr{
 }
 .footer-logo img{
     height: 110px;
-    padding-top: 40px;
+    padding: 30px;
 }
 
 /* fontawesome icon css */
@@ -173,4 +181,51 @@ ul li a:hover{
     padding-bottom: 10px;
     font-size: 18px;
     margin-top: -5px;
+}
+
+/*=============================
+ Responsive for mobile & tablet
+=============================== */
+
+@media only screen and (max-width:688px) {
+    h1{
+    font-size:36px
+    }
+    .container{
+        width: 461px;;
+    }
+    .player-banner{
+        width: 30%;
+    }
+    .title, .top-section{
+        display: grid;
+        flex-direction: column;
+    }
+    .container-2{
+        width: 461px;
+        align-items: center;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .flexible-container{
+        width:461px;
+        align-items: center;
+    }
+    .highlight-info, .highlight-banner2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+    
+    } 
+    .footer-logo img{
+        width: 70%;
+        height: auto;
+    }
+    .copyright{
+        justify-content: center;
+    }
+
 }
